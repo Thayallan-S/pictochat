@@ -1,0 +1,24 @@
+PODS:
+  - EasyPeasy (1.8.0)
+  - lottie-ios (2.5.2)
+  - Then (2.4.0)
+
+DEPENDENCIES:
+  - EasyPeasy
+  - lottie-ios
+  - Then
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EasyPeasy
+    - lottie-ios
+    - Then
+
+SPEC CHECKSUMS:
+  EasyPeasy: bfffe5d47bbaaef3e32888c250a196768484b43a
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
+
+PODFILE CHECKSUM: 71e1287ffa6bc3031be77b5041dacdab3a6676b3
+
+COCOAPODS: 1.5.3

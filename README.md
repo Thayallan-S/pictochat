@@ -1,2 +1,2 @@
-# pictochat
+# pictochat-ios
 An iOS application for offline messaging. Concept similar to pictochat on Nintendo DS

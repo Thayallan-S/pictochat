@@ -11,7 +11,7 @@ import UIKit
 class AppFlowController: UIViewController {
     
     private let splashViewController = SplashViewController()
-    private let launchViewController = LaunchViewController()
+    private let launchFlowController = LaunchFlowController()
     //private let homeFlowController = HomeFlowController()
     
     override func viewDidLoad() {
@@ -43,9 +43,9 @@ extension AppFlowController {
 // MARK: - Start Child FlowControllers
 extension AppFlowController {
     func startHomeFlowController() {
-        launchViewController.modalTransitionStyle = .coverVertical
-        present(launchViewController, animated: false, completion: nil)
-        launchViewController.start()
+        launchFlowController.modalTransitionStyle = .coverVertical
+        present(launchFlowController, animated: false, completion: nil)
+        launchFlowController.start()
         
         //homeFlowController.modalTransitionStyle = .crossDissolve
        // present(homeFlowController, animated: true, completion: nil)

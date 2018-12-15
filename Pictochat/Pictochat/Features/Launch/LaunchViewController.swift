@@ -30,14 +30,14 @@ class LaunchViewController: UIViewController {
         $0.text = "OFFLINE MESSAGING & CHATROOMS"
     }
     
+    let textView = LaunchViewTextView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        layoutViews()
         
     }
     
-    func start() {
-        layoutViews()
-    }
 }
 
 extension LaunchViewController {
@@ -53,5 +53,8 @@ extension LaunchViewController {
         
         view.addSubview(sloganLabel)
         sloganLabel.easy.layout(CenterX(), Top(5).to(logoName))
+        
+        view.addSubview(textView)
+        textView.easy.layout(Width(300), Height(55), CenterX(), Top(30).to(sloganLabel))
     }
 }

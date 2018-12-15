@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0F5BAAD57E4D9E074C01615F /* Pods_Pictochat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC950B3DD928C256107A4CB8 /* Pods_Pictochat.framework */; };
 		5373F3FA21C4A2CE00EDDD05 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F3F921C4A2CE00EDDD05 /* Background.swift */; };
+		5373F40E21C58F6500EDDD05 /* LaunchViewTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F40D21C58F6500EDDD05 /* LaunchViewTextView.swift */; };
+		5373F41021C598E000EDDD05 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F40F21C598E000EDDD05 /* User.swift */; };
+		5373F41221C59ABD00EDDD05 /* LaunchFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41121C59ABD00EDDD05 /* LaunchFlowController.swift */; };
+		5373F41421C59CBC00EDDD05 /* HomeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41321C59CBC00EDDD05 /* HomeFlowController.swift */; };
 		5375079F21C361270000F5CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375079E21C361270000F5CD /* AppDelegate.swift */; };
 		537507A621C361280000F5CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537507A521C361280000F5CD /* Assets.xcassets */; };
 		537507B121C361C70000F5CD /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537507B021C361C70000F5CD /* AppFlowController.swift */; };
@@ -21,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		5373F3F921C4A2CE00EDDD05 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		5373F40D21C58F6500EDDD05 /* LaunchViewTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewTextView.swift; sourceTree = "<group>"; };
+		5373F40F21C598E000EDDD05 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5373F41121C59ABD00EDDD05 /* LaunchFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowController.swift; sourceTree = "<group>"; };
+		5373F41321C59CBC00EDDD05 /* HomeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowController.swift; sourceTree = "<group>"; };
 		5375079B21C361270000F5CD /* Pictochat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictochat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5375079E21C361270000F5CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		537507A521C361280000F5CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,8 +101,10 @@
 		537507B521C363B10000F5CD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				5373F41121C59ABD00EDDD05 /* LaunchFlowController.swift */,
 				537507C121C36BD80000F5CD /* Launch */,
 				537507C021C36BC90000F5CD /* Home */,
+				5373F41321C59CBC00EDDD05 /* HomeFlowController.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -104,6 +114,7 @@
 			children = (
 				537507BE21C366F90000F5CD /* UI.swift */,
 				5373F3F921C4A2CE00EDDD05 /* Background.swift */,
+				5373F40F21C598E000EDDD05 /* User.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				537507C221C36E380000F5CD /* LaunchViewController.swift */,
+				5373F40D21C58F6500EDDD05 /* LaunchViewTextView.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -269,6 +281,10 @@
 				537507B121C361C70000F5CD /* AppFlowController.swift in Sources */,
 				537507BC21C366C70000F5CD /* UIViewController+AddRemoveChildren.swift in Sources */,
 				537507C321C36E380000F5CD /* LaunchViewController.swift in Sources */,
+				5373F40E21C58F6500EDDD05 /* LaunchViewTextView.swift in Sources */,
+				5373F41421C59CBC00EDDD05 /* HomeFlowController.swift in Sources */,
+				5373F41021C598E000EDDD05 /* User.swift in Sources */,
+				5373F41221C59ABD00EDDD05 /* LaunchFlowController.swift in Sources */,
 				537507BF21C366F90000F5CD /* UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

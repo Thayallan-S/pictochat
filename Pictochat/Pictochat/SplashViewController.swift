@@ -9,22 +9,31 @@
 import UIKit
 import Lottie
 import EasyPeasy
+import Then
 
 class SplashViewController: UIViewController {
+    
+    private let background = Background()
+    
+    private let titleLabel = UILabel().then {
+        $0.font = UI.Font.slogan
+        $0.textColor = UI.Colors.white
+        $0.text = "OFFLINE MESSAGING & CHATROOMS"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UI.Colors.white
         
         
-        let imageView = UIImageView(image: UIImage(named: "chuteLogo"))
-        view.addSubview(imageView)
-        imageView.easy.layout(CenterX(), Width(375), Height(300), Top(150))
+        layoutViews()
+    }
+    
+    func layoutViews() {
+        view.addSubview(background)
+        background.easy.layout(CenterX(),CenterY(-75))
         
-        let animationView = LOTAnimationView(name: "splash-view-controller-animation")
-        self.view.addSubview(animationView)
-        print("\(animationView.animationDuration)")
-        animationView.play()
+        view.addSubview(titleLabel)
+        titleLabel.easy.layout(CenterX(), CenterY())
     }
 }

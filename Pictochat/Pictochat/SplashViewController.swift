@@ -15,7 +15,17 @@ class SplashViewController: UIViewController {
     
     private let background = Background()
     
-    private let titleLabel = UILabel().then {
+    private let logoName = UIImageView().then {
+        $0.image = UIImage(named: "whiteLogo")
+        $0.contentMode = .scaleAspectFill
+    }
+    
+    private let logoIcon = UIImageView().then {
+        $0.image = UIImage(named: "dsIcon")
+        $0.contentMode = .scaleAspectFill
+    }
+    
+    private let sloganLabel = UILabel().then {
         $0.font = UI.Font.slogan
         $0.textColor = UI.Colors.white
         $0.text = "OFFLINE MESSAGING & CHATROOMS"
@@ -31,9 +41,15 @@ class SplashViewController: UIViewController {
     
     func layoutViews() {
         view.addSubview(background)
-        background.easy.layout(CenterX(),CenterY(-75))
+        background.easy.layout(CenterX(),CenterY(-25))
         
-        view.addSubview(titleLabel)
-        titleLabel.easy.layout(CenterX(), CenterY())
+        view.addSubview(logoName)
+        logoName.easy.layout(Width(280), CenterX(-25), Top(300))
+        
+        view.addSubview(logoIcon)
+        logoIcon.easy.layout(Left(5).to(logoName), Width(50), Top(300))
+        
+        view.addSubview(sloganLabel)
+        sloganLabel.easy.layout(CenterX(), Top(5).to(logoName))
     }
 }

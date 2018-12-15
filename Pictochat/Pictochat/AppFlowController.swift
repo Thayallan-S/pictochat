@@ -43,8 +43,9 @@ extension AppFlowController {
 // MARK: - Start Child FlowControllers
 extension AppFlowController {
     func startHomeFlowController() {
-        
-        add(childController: launchViewController)
+        launchViewController.modalTransitionStyle = .coverVertical
+        present(launchViewController, animated: false, completion: nil)
+        launchViewController.start()
         
         //homeFlowController.modalTransitionStyle = .crossDissolve
        // present(homeFlowController, animated: true, completion: nil)

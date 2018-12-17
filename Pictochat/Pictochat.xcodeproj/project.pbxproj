@@ -13,6 +13,16 @@
 		5373F41021C598E000EDDD05 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F40F21C598E000EDDD05 /* User.swift */; };
 		5373F41221C59ABD00EDDD05 /* LaunchFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41121C59ABD00EDDD05 /* LaunchFlowController.swift */; };
 		5373F41421C59CBC00EDDD05 /* HomeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41321C59CBC00EDDD05 /* HomeFlowController.swift */; };
+		5373F41621C59DB100EDDD05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41521C59DB100EDDD05 /* HomeViewController.swift */; };
+		5373F41821C59FC900EDDD05 /* UserCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41721C59FC900EDDD05 /* UserCardView.swift */; };
+		5373F41A21C5B1E000EDDD05 /* ChatroomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41921C5B1E000EDDD05 /* ChatroomCardView.swift */; };
+		5373F41C21C5B43100EDDD05 /* NewChatroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41B21C5B43100EDDD05 /* NewChatroomView.swift */; };
+		5373F41E21C5BA3200EDDD05 /* RecentMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41D21C5BA3200EDDD05 /* RecentMessagesView.swift */; };
+		5373F42021C5BE9500EDDD05 /* CreateARoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F41F21C5BE9500EDDD05 /* CreateARoomView.swift */; };
+		5373F42221C5D06E00EDDD05 /* NewChatroomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F42121C5D06E00EDDD05 /* NewChatroomTextView.swift */; };
+		5373F42521C5D3AF00EDDD05 /* CreateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F42421C5D3AF00EDDD05 /* CreateButtonView.swift */; };
+		5373F42921C5DDFA00EDDD05 /* RecentChatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F42821C5DDFA00EDDD05 /* RecentChatsCardView.swift */; };
+		5373F42C21C5E7A100EDDD05 /* MPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373F42B21C5E7A100EDDD05 /* MPCManager.swift */; };
 		5375079F21C361270000F5CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375079E21C361270000F5CD /* AppDelegate.swift */; };
 		537507A621C361280000F5CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537507A521C361280000F5CD /* Assets.xcassets */; };
 		537507B121C361C70000F5CD /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537507B021C361C70000F5CD /* AppFlowController.swift */; };
@@ -29,6 +39,16 @@
 		5373F40F21C598E000EDDD05 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5373F41121C59ABD00EDDD05 /* LaunchFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowController.swift; sourceTree = "<group>"; };
 		5373F41321C59CBC00EDDD05 /* HomeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowController.swift; sourceTree = "<group>"; };
+		5373F41521C59DB100EDDD05 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5373F41721C59FC900EDDD05 /* UserCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardView.swift; sourceTree = "<group>"; };
+		5373F41921C5B1E000EDDD05 /* ChatroomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomCardView.swift; sourceTree = "<group>"; };
+		5373F41B21C5B43100EDDD05 /* NewChatroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatroomView.swift; sourceTree = "<group>"; };
+		5373F41D21C5BA3200EDDD05 /* RecentMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMessagesView.swift; sourceTree = "<group>"; };
+		5373F41F21C5BE9500EDDD05 /* CreateARoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateARoomView.swift; sourceTree = "<group>"; };
+		5373F42121C5D06E00EDDD05 /* NewChatroomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatroomTextView.swift; sourceTree = "<group>"; };
+		5373F42421C5D3AF00EDDD05 /* CreateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButtonView.swift; sourceTree = "<group>"; };
+		5373F42821C5DDFA00EDDD05 /* RecentChatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatsCardView.swift; sourceTree = "<group>"; };
+		5373F42B21C5E7A100EDDD05 /* MPCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCManager.swift; sourceTree = "<group>"; };
 		5375079B21C361270000F5CD /* Pictochat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictochat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5375079E21C361270000F5CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		537507A521C361280000F5CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +76,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5373F42321C5D38800EDDD05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5373F41721C59FC900EDDD05 /* UserCardView.swift */,
+				5373F42621C5DCCC00EDDD05 /* Chatroom */,
+				5373F42721C5DDD600EDDD05 /* Recent Messages */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5373F42621C5DCCC00EDDD05 /* Chatroom */ = {
+			isa = PBXGroup;
+			children = (
+				5373F41921C5B1E000EDDD05 /* ChatroomCardView.swift */,
+				5373F41B21C5B43100EDDD05 /* NewChatroomView.swift */,
+				5373F41F21C5BE9500EDDD05 /* CreateARoomView.swift */,
+				5373F42121C5D06E00EDDD05 /* NewChatroomTextView.swift */,
+				5373F42421C5D3AF00EDDD05 /* CreateButtonView.swift */,
+			);
+			path = Chatroom;
+			sourceTree = "<group>";
+		};
+		5373F42721C5DDD600EDDD05 /* Recent Messages */ = {
+			isa = PBXGroup;
+			children = (
+				5373F41D21C5BA3200EDDD05 /* RecentMessagesView.swift */,
+				5373F42821C5DDFA00EDDD05 /* RecentChatsCardView.swift */,
+			);
+			path = "Recent Messages";
+			sourceTree = "<group>";
+		};
+		5373F42A21C5E79200EDDD05 /* MPC */ = {
+			isa = PBXGroup;
+			children = (
+				5373F42B21C5E7A100EDDD05 /* MPCManager.swift */,
+			);
+			path = MPC;
+			sourceTree = "<group>";
+		};
 		5375079221C361270000F5CD = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +136,7 @@
 		5375079D21C361270000F5CD /* Pictochat */ = {
 			isa = PBXGroup;
 			children = (
+				5373F42A21C5E79200EDDD05 /* MPC */,
 				537507B221C3623F0000F5CD /* SplashViewController.swift */,
 				5375079E21C361270000F5CD /* AppDelegate.swift */,
 				537507B021C361C70000F5CD /* AppFlowController.swift */,
@@ -102,9 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				5373F41121C59ABD00EDDD05 /* LaunchFlowController.swift */,
+				5373F41321C59CBC00EDDD05 /* HomeFlowController.swift */,
 				537507C121C36BD80000F5CD /* Launch */,
 				537507C021C36BC90000F5CD /* Home */,
-				5373F41321C59CBC00EDDD05 /* HomeFlowController.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -130,6 +190,8 @@
 		537507C021C36BC90000F5CD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5373F41521C59DB100EDDD05 /* HomeViewController.swift */,
+				5373F42321C5D38800EDDD05 /* Views */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -275,17 +337,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				537507BD21C366C70000F5CD /* UIColor+HexValue.swift in Sources */,
+				5373F42021C5BE9500EDDD05 /* CreateARoomView.swift in Sources */,
 				537507B321C3623F0000F5CD /* SplashViewController.swift in Sources */,
+				5373F41C21C5B43100EDDD05 /* NewChatroomView.swift in Sources */,
 				5375079F21C361270000F5CD /* AppDelegate.swift in Sources */,
 				5373F3FA21C4A2CE00EDDD05 /* Background.swift in Sources */,
 				537507B121C361C70000F5CD /* AppFlowController.swift in Sources */,
+				5373F41A21C5B1E000EDDD05 /* ChatroomCardView.swift in Sources */,
 				537507BC21C366C70000F5CD /* UIViewController+AddRemoveChildren.swift in Sources */,
 				537507C321C36E380000F5CD /* LaunchViewController.swift in Sources */,
 				5373F40E21C58F6500EDDD05 /* LaunchViewTextView.swift in Sources */,
 				5373F41421C59CBC00EDDD05 /* HomeFlowController.swift in Sources */,
+				5373F42C21C5E7A100EDDD05 /* MPCManager.swift in Sources */,
 				5373F41021C598E000EDDD05 /* User.swift in Sources */,
+				5373F42221C5D06E00EDDD05 /* NewChatroomTextView.swift in Sources */,
+				5373F41E21C5BA3200EDDD05 /* RecentMessagesView.swift in Sources */,
 				5373F41221C59ABD00EDDD05 /* LaunchFlowController.swift in Sources */,
+				5373F42521C5D3AF00EDDD05 /* CreateButtonView.swift in Sources */,
+				5373F41621C59DB100EDDD05 /* HomeViewController.swift in Sources */,
 				537507BF21C366F90000F5CD /* UI.swift in Sources */,
+				5373F42921C5DDFA00EDDD05 /* RecentChatsCardView.swift in Sources */,
+				5373F41821C59FC900EDDD05 /* UserCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@ import Then
 class LaunchFlowController: UIViewController, UITextFieldDelegate {
     
     private let launchViewController = LaunchViewController()
+    private let homeFlowController = HomeFlowController() 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +22,10 @@ class LaunchFlowController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        User.userID = self.launchViewController.textView.textField.text!
-        print("\(User.userID)")
         self.launchViewController.textView.textField.endEditing(true)
-        
+        homeFlowController.modalTransitionStyle = .crossDissolve
+        present(homeFlowController, animated: true, completion: nil)
+        homeFlowController.start()
         return false
     }
     

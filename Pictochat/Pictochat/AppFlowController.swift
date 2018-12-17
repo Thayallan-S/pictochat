@@ -47,8 +47,6 @@ extension AppFlowController {
         present(launchFlowController, animated: false, completion: nil)
         launchFlowController.start()
         
-        //homeFlowController.modalTransitionStyle = .crossDissolve
-       // present(homeFlowController, animated: true, completion: nil)
-       // homeFlowController.start()
+        
     }
 }

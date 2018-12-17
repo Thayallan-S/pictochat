@@ -15,6 +15,7 @@ struct UI {
         static let black = UIColor.black
         static let green = UIColor(hexValue: 0x76C61A)
         static let red = UIColor(hexValue: 0xFF3B30)
+        static let lightGrey = UIColor(hexValue: 0xD8D8D8)
         static let grey = UIColor(hexValue: 0x8E8E93)
         static let blue = UIColor(hexValue: 0x4A90E2)
     }
@@ -24,7 +25,7 @@ struct UI {
         
         static let subTitle = phosphateMain(24)
         
-        static let miniTitle = phosphateMain(20)
+        static let miniTitle = phosphateMain(18)
         
         static let slogan = phosphateMain(14)
         

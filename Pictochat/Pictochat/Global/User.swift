@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Pictochatr.swift
 //  Pictochat
 //
 //  Created by Kartik on 2018-12-15.
@@ -8,8 +8,10 @@
 
 import Foundation
 
-struct User {
+struct Pictochatr {
     
-    static var userID: String = ""
+    static var user: String = ""
+    
+    static var chatrooms = [String]()
     
 }

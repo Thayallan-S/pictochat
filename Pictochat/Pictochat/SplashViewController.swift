@@ -31,6 +31,8 @@ class SplashViewController: UIViewController {
         $0.text = "OFFLINE MESSAGING & CHATROOMS"
     }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

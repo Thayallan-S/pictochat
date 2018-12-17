@@ -11,7 +11,6 @@ import Foundation
 struct Pictochatr {
     
     static var user: String = ""
-    
-    static var chatrooms = [String]()
-    
+    static var knownUsers = [String]()
 }
+

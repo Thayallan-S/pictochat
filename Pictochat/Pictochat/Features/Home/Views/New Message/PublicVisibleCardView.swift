@@ -1,5 +1,5 @@
 //
-//  CreateARoomView.swift
+//  PublicVisibleCardView.swift
 //  Pictochat
 //
 //  Created by Thayallan Srinathan on 2018-12-15.
@@ -14,7 +14,7 @@ protocol CreateARoomViewDelegate: class {
     func didTapCloseCRV()
 }
 
-class CreateARoomView: UIView {
+class PublicVisibleCardView: UIView {
     
     weak var delegate: CreateARoomViewDelegate?
     
@@ -28,20 +28,19 @@ class CreateARoomView: UIView {
     
     let contentView = UIView()
     
-    private let createARoomLabel = UILabel().then {
+    private let headerLabel = UILabel().then {
         $0.textColor = UI.Colors.grey
         $0.font = UI.Font.subTitle
-        $0.text = "Create a Room"
+        $0.text = "Publicly Visible"
     }
-    
-    let textView = NewChatroomTextView()
     
     let exitIcon = UIImageView().then {
         $0.image = UIImage(named: "closeIcon")
         $0.contentMode = .scaleAspectFill
     }
     
-    let createButton = CreateButtonView()
+    let allowButton = AllowButtonView()
+    let denyButton = DenyButtonView()
     
     init() {
         super.init(frame: .zero)
@@ -55,7 +54,7 @@ class CreateARoomView: UIView {
     }
 }
 
-extension CreateARoomView {
+extension PublicVisibleCardView {
     func setupProperties() {
         contentView.backgroundColor = UI.Colors.white
         contentView.layer.cornerRadius = 35
@@ -66,7 +65,7 @@ extension CreateARoomView {
     }
 }
 
-extension CreateARoomView {
+extension PublicVisibleCardView {
     func layoutViews() {
         addSubview(contentView)
         contentView.easy.layout(Edges())
@@ -77,14 +76,14 @@ extension CreateARoomView {
         contentView.addSubview(closeButton)
         closeButton.easy.layout(Width(30), Height(30), Top(), Right())
         
-        contentView.addSubview(createARoomLabel)
-        createARoomLabel.easy.layout(Left(35), Top(20))
+        contentView.addSubview(headerLabel)
+        headerLabel.easy.layout(Left(35), Top(20))
+    
+        contentView.addSubview(allowButton)
+        allowButton.easy.layout(CenterX(-70), Top(15).to(headerLabel), Width(125), Height(45))
         
-        contentView.addSubview(textView)
-        textView.easy.layout(Width(280), Height(50), CenterX(), Top(5).to(createARoomLabel))
-        
-        contentView.addSubview(createButton)
-        createButton.easy.layout(CenterX(), Top(15).to(textView), Width(180), Height(45))
+        contentView.addSubview(denyButton)
+        denyButton.easy.layout(CenterX(70), Top(15).to(headerLabel), Width(125), Height(45))
         
     }
 } 

@@ -1,5 +1,5 @@
 //
-//  NewChatroomView.swift
+//  PublicVisibleView.swift
 //  Pictochat
 //
 //  Created by Thayallan Srinathan on 2018-12-15.
@@ -14,17 +14,12 @@ protocol NewChatRoomViewDelegate: class {
     func didTapNewChatroom()
 }
 
-class NewChatroomView: UIView {
+class PublicVisibleView: UIView {
     
     private let contentView = UIView()
     
     private let groupIcon = UIImageView().then {
-        $0.image = UIImage(named: "groupIcon")
-        $0.contentMode = .scaleAspectFill
-    }
-    
-    private let addIcon = UIImageView().then {
-        $0.image = UIImage(named: "addIcon")
+        $0.image = UIImage(named: "findIcon")
         $0.contentMode = .scaleAspectFill
     }
     
@@ -50,9 +45,9 @@ class NewChatroomView: UIView {
     }
 }
 
-extension NewChatroomView {
+extension PublicVisibleView {
     func setupProperties() {
-        contentView.backgroundColor = UI.Colors.white
+        contentView.layer.backgroundColor = UI.Colors.white.cgColor
         contentView.layer.cornerRadius = 35
         contentView.layer.shadowColor = UI.Colors.black.cgColor
         contentView.layer.shadowOpacity = 0.8
@@ -61,17 +56,13 @@ extension NewChatroomView {
     }
 }
 
-extension NewChatroomView {
+extension PublicVisibleView {
     func layoutViews() {
         addSubview(contentView)
         contentView.easy.layout(Edges())
         
-        
         contentView.addSubview(groupIcon)
-        groupIcon.easy.layout(CenterX(), CenterY())
-        
-        contentView.addSubview(addIcon)
-        addIcon.easy.layout(Top(), Right())
+        groupIcon.easy.layout(CenterX(), CenterY(), Width(26), Height(26))
         
         contentView.addSubview(selectionButton)
         selectionButton.easy.layout(Edges())

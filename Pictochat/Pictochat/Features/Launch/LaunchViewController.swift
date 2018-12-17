@@ -27,7 +27,7 @@ class LaunchViewController: UIViewController {
     private let sloganLabel = UILabel().then {
         $0.font = UI.Font.slogan
         $0.textColor = UI.Colors.white
-        $0.text = "OFFLINE MESSAGING & CHATROOMS"
+        $0.text = "OFFLINE MESSAGING"
     }
     
     let textView = LaunchViewTextView()

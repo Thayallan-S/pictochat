@@ -22,6 +22,7 @@ class LaunchFlowController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        Pictochatr.user = launchViewController.textView.textField.text!
         self.launchViewController.textView.textField.endEditing(true)
         homeFlowController.modalTransitionStyle = .crossDissolve
         present(homeFlowController, animated: true, completion: nil)
